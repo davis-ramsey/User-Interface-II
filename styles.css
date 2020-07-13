@@ -7,7 +7,6 @@
 	letter-spacing: 1.5px;
 	line-height: 2;
 }
-
 body {
 	background-image: radial-gradient(
 		circle farthest-corner at 10% 20%,
@@ -141,7 +140,7 @@ footer div a {
 		background-position: 0% 50%;
 	}
 }
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
 	a {
 		padding: 1%;
 	}
@@ -164,11 +163,27 @@ footer div a {
 	}
 
 	.images {
-		flex-direction: column;
-		justify-content: flex-start;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 	.images > * {
-		margin-left: 38%;
-		justify-content: space-between;
+		margin-left: 10%;
+	}
+}
+@media (max-width: 500px) {
+	header nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav a {
+		width: 20%;
+	}
+
+	.images > * {
+		width: 30%;
+		margin-left: 4%;
 	}
 }
