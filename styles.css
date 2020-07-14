@@ -168,7 +168,11 @@ footer div a {
 		flex-wrap: wrap;
 	}
 	.images > * {
-		margin-left: 10%;
+		width: 45%;
+	}
+	.project {
+		height: auto;
+		width: 100%;
 	}
 }
 @media (max-width: 500px) {
@@ -179,11 +183,6 @@ footer div a {
 	}
 
 	header nav a {
-		width: 20%;
-	}
-
-	.images > * {
-		width: 30%;
-		margin-left: 4%;
+		width: 90px;
 	}
 }
